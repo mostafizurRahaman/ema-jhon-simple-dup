@@ -1,0 +1,25 @@
+.header-navbar{
+   background: #1C2B35;
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0px 140px;
+}
+
+.header-navbar a{
+   font-size: 17px;
+   color: #fff;
+   margin-left: 25px;
+   text-decoration: none;
+   text-transform: uppercase ;
+   transition: all 0.5 ease-in-out;
+   -webkit-transition: all 0.5 ease-in-out;
+   -moz-transition: all 0.5 ease-in-out;
+   -ms-transition: all 0.5 ease-in-out;
+   -o-transition: all 0.5 ease-in-out;
+}
+.header-navbar a:hover{
+   color: orange;
+   font-weight: bold;
+}
