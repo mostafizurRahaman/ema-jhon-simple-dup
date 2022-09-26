@@ -1,6 +1,7 @@
 .shop-container{
    display: grid;
    grid-template-columns: 4fr 1fr;
+   width: 100%;
 }
 
 .products-container{
@@ -8,8 +9,17 @@
    grid-template-columns: repeat(3, 1fr);
    gap: 25px;
    padding: 50px;
+   margin-top: 80px;
+   
+   
 }
 
 .cartIcon{
    font-size: 16px;
+}
+
+.cart-container{
+   width: 100%;
+   display: block;
+   background:rgba(255, 153, 0, 0.3) ; 
 }
