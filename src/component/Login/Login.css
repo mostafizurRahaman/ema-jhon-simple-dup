@@ -1,0 +1,84 @@
+.login-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 80px;
+   height: 700px;
+}
+
+.form-container{
+   width: 500px;
+   height: auto;
+   border: 1px solid #95A0A7;
+   padding: 15px;
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+   box-shadow: -5px 5px 3px orange;
+}
+
+.form-title{
+   text-align: center; 
+   font-family: 'lato';
+   font-size: 34px;
+}
+.form-control{
+ margin-top: 15px;
+}
+.form-control label{
+   display: block;
+   font-family: lato;
+   font-family: 20px;
+   font-weight: bold;
+   margin-bottom: 10px;
+   letter-spacing: 1px;
+}
+
+.form-control input{
+   width: 460px;
+   padding: 15px 10px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   margin-bottom: 10px;
+   border: 1px solid #95A0A7;
+}
+
+.login-button{
+   background: rgba(255, 153, 0, 0.3); 
+   width: 460px;
+   padding:12px 10px;
+   font-weight: bold;
+   font-family: lato;
+   font-size: 20px;
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+   margin-top: 45px;
+   margin-bottom: 5px;
+   cursor: pointer;
+  border: none; 
+}
+.login-button:hover{
+   background:rgba(255, 153, 0, 0.6); 
+}
+
+.helping-message{
+   text-align: center;
+   text-transform: capitalize;
+}
+.helping-message a{
+  color: orange;
+   display: inline-block; 
+   border-bottom: 1px solid orange; 
+   text-decoration: none; 
+   font-weight: bold;
+}
+
+

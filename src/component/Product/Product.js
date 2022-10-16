@@ -5,7 +5,7 @@ import './Product.css';
 const Product = (props) => {
   
    const {productHandler, product} = props; 
-   const {img, name, seller, ratings, price} = product;
+   const {img, name, seller, ratings, price, stock} = product;
    // console.log(props.product); 
    return (
       <div className='product'>
@@ -14,6 +14,7 @@ const Product = (props) => {
      </div>
       <div className='product-info'>
          <p className='product-name'>{name}</p>
+         <p> Stock : {stock}</p>
          <p className='product-price'>Price: ${price}</p>
          <p className='seller-info'><small>Seller : {seller}</small></p>
          <p className='ratings-info'><small>Ratings: {ratings} stars</small></p>

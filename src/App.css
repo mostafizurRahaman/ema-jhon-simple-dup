@@ -5,9 +5,10 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 p{
-  line-height: 1.8em;
+  line-height: 1.5em;
 }
 h1,h2,h3,h4,h5,h6{
   margin: 10px 0px;

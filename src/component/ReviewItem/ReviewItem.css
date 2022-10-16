@@ -1,0 +1,63 @@
+.review-item{
+   display: flex;
+   width: 580px;
+   height: 9rem;
+   gap: 1rem;
+   border: 1px solid rgba(149, 160, 167, 1);
+   padding: 0.3rem;
+   border-radius:1rem;
+   -webkit-border-radius:1rem;
+   -moz-border-radius:1rem;
+   -ms-border-radius:1rem;
+   -o-border-radius:1rem;
+}
+
+
+.review-item img{
+  width: 9.1rem;
+  height: auto; 
+  border-radius:1rem ;
+  -webkit-border-radius:1rem ;
+  -moz-border-radius:1rem ;
+  -ms-border-radius:1rem ;
+  -o-border-radius:1rem ;
+}
+
+.review-container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+}
+.review-details-container{
+ 
+
+}
+.delete-icon-container{
+   margin-right: 1rem;
+   width: 50px;
+   height: 50px;
+   background: rgba(235, 87, 87, 0.3);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.delete-icon-container {
+   margin-right: 1rem;
+   width: 60px;
+   height: 60px;
+   background: rgba(235, 87, 87, 0.3);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+
+.delete-icon-container .delete-icon{
+   font-size: 30px;
+   color: #EB5757;
+}

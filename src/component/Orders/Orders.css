@@ -1,0 +1,9 @@
+.orders-container{
+   gap: 1rem;
+   display: grid; 
+   grid-template-columns:repeat(1, 1fr);
+   margin-top: 12rem;
+   justify-items: center;
+   align-items: center;
+
+}
