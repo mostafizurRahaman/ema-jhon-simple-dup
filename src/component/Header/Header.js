@@ -24,15 +24,20 @@ const Header = () => {
                <NavLink to="/inventory">Inventory</NavLink>
                <NavLink to="/about">About</NavLink>
                <NavLink to="/shop">Shop</NavLink>
-               <NavLink to="/register">Register</NavLink>
-               <NavLink to="/login">login</NavLink>               
+               {
+                user?.uid ? <NavLink to='/shop'> <button className='logoutButton' onClick={handleLogOut}>Log Out</button></NavLink> : 
+                <>
+                <NavLink to="/register">Register</NavLink>
+                <NavLink to="/login">login</NavLink>
+                </>
+               }
+
+              
             </div>
             {
-                user && <p className='text-white'>{user.email}</p>
-            }
-         {
-            user && <button className='logoutButton' onClick={handleLogOut}>Log Out</button>
-         }
+                  user?.uid && <p className='text-white'>{user.uid} </p>
+               }
+        
          </div>
       </div>
    );

@@ -70,7 +70,7 @@ const Register = () => {
                {
                   passwordError && <p className="text-error">{passwordError}</p>
                }
-               <input className="login-button" value="login" type="submit" />
+               <input className="login-button" value="Register" type="submit" />
                <p className="helping-message">
                   Already have a account ? <Link to="/login">login</Link>
                </p>

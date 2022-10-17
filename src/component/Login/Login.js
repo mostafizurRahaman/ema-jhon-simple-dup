@@ -1,12 +1,16 @@
 import React, { useContext } from "react";
 import "./Login.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Context/UserContext";
 
 const Login = () => {
    const { signIn} = useContext(AuthContext);
+  const navigate  = useNavigate();
+  const location = useLocation(); 
+  const from = location.state?.from?.pathname || '/';
+   
 
-   const hanldeSignIn = (e) => {
+   const handleSignIn = (e) => {
       e.preventDefault();
       const form = e.target;
       const email = form.email.value;
@@ -17,7 +21,8 @@ const Login = () => {
       signIn(email, password)
       .then(res => {
          console.log(res.user); 
-         form.reset(); 
+         form.reset();
+         navigate(from, { replace: true }); 
       })
       .catch(err => console.log(err))
    };
@@ -26,7 +31,7 @@ const Login = () => {
    return (
       <div className="login-container">
          <div className="form-container">
-            <form onSubmit={hanldeSignIn}>
+            <form onSubmit={handleSignIn}>
                <h2 className="form-title">Login</h2>
                <div className="form-control">
                   <label htmlFor="email">Email: </label>

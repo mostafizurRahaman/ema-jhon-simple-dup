@@ -8,6 +8,8 @@ import Shop from './component/Shop/Shop';
 import { ProductAndCartLoader } from './Loader/ProductAndCartLoader';
 import Login from './component/Login/Login';
 import Register from './component/Register/Register';
+import PrivateRoutes from './Routes/PrivateRoutes';
+import PayNow from './component/PayNow/PayNow';
 
 function App() {
 
@@ -23,7 +25,8 @@ function App() {
       loader: ()=> fetch('products.json'),
       element: <Shop></Shop>
     }, 
-    {path:"/inventory", element: <Inventory></Inventory>},
+    {path:"/inventory", element:<PrivateRoutes><Inventory></Inventory></PrivateRoutes>},
+    {path:"/pay-now", element:<PrivateRoutes><PayNow></PayNow></PrivateRoutes>},
     {path:'/orders',     
     element: <Orders></Orders>,
     loader: ProductAndCartLoader, 
