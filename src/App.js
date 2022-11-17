@@ -17,12 +17,12 @@ function App() {
    {path: '/', element: <Main></Main>, children: [
     {
       path:"/", 
-      loader: ()=> fetch('products.json'),
+      // loader: ()=> fetch('http://localhost:5000/products'),
       element: <Shop></Shop>
     },
     {
       path:'/shop', 
-      loader: ()=> fetch('products.json'),
+      // loader: ()=> fetch('http://localhost:5000/products'),
       element: <Shop></Shop>
     }, 
     {path:"/inventory", element:<PrivateRoutes><Inventory></Inventory></PrivateRoutes>},
